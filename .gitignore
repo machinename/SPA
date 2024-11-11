@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Log files
+*.log
+
+# Environment files
+.env
+ 
+# Cache directories
+.cache/
+.vscode/
+.idea/
+
+# Mac OS-specific files
+.DS_Store

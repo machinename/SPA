@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "./dist", // This is where compiled files will go
+    "rootDir": "./src", // Source files
+    "strict": true, // Type safety
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"], // Include all TypeScript files in src
+  "exclude": ["node_modules"] // Exclude node_modules folder
+}
+
+

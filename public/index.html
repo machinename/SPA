@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- Button to toggle nav visibility -->
+            <button type="button" id="toggle-nav-btn">Show Menu</button>
+            <nav id="nav" class="nav-hidden">
+                <a href="/" class="nav-link" data-link>Home</a>
+                <a href="/about" class="nav-link" data-link>About</a>
+                <a href="/contact" class="nav-link" data-link>Contact</a>
+                <a href='/dynamic/cloud/456' class="nav-link">Dynamic</a>
+            </nav>
+        </div>
+    </header>
+    <div id="app" class="page"></div>
+    <!-- Webpack will automatically inject the js file here -->
+</body>
+
+</html>

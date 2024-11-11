@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-visible {
+    display: block;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.nav-btn-visible {
+    display: block;
+}
+
+.nav-btn-hideen {
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+#app {
+    margin-top: 4rem;
+    background-color: aquamarine;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
