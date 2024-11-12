@@ -18,25 +18,50 @@ header {
     z-index: 1;
 }
 
+.header-leading, 
+.header-trailing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-leading {
+    padding-left: 1rem;
+    justify-content: flex-start;
+}
+.header-trailing {
+    padding-right: 1rem;
+    justify-content: flex-end;
+}
+
 .nav-visible {
-    display: block;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    top: 4.5rem;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 2px 2px rgba(0.1, 0.1, 0.1, 0.1);
 }
 
 .nav-hidden {
     display: none;
 }
 
-.nav-btn-visible {
-    display: block;
-}
-
-.nav-btn-hideen {
-    display: none;
-}
-
 .nav-link {
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    font-weight: lighter;
+    gap: 1rem;
     color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    z-index: 3;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .nav-link:hover {
@@ -49,4 +74,3 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-

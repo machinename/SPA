@@ -9,19 +9,30 @@
 
 <body>
     <header>
-        <div>
+        
             <!-- Button to toggle nav visibility -->
-            <button type="button" id="toggle-nav-btn">Show Menu</button>
-            <nav id="nav" class="nav-hidden">
-                <a href="/" class="nav-link" data-link>Home</a>
-                <a href="/about" class="nav-link" data-link>About</a>
-                <a href="/contact" class="nav-link" data-link>Contact</a>
-                <a href='/dynamic/cloud/456' class="nav-link">Dynamic</a>
-            </nav>
-        </div>
+            <div class="header-leading">
+                <button type="button" id="nav-menu-btn">Nav Menu</button>
+                <nav id="nav-menu" class="nav-hidden">
+                    <a href="/" class="nav-link" data-link>Home</a>
+                    <a href="/about" class="nav-link" data-link>About</a>
+                    <a href="/contact" class="nav-link" data-link>Contact</a>
+                    <a href='/dynamic/cloud/456' class="nav-link">Dynamic</a>
+                </nav>
+            </div>
+
+
+            <div class="header-trailing">
+                <button type="button" id="account-menu-btn">Account Menu</button>
+                <nav id="account-menu" class="nav-hidden">
+                    <a href="/" class="nav-link" data-link>Profile</a>
+                    <a href="/about" class="nav-link" data-link>Login</a>
+                </nav>
+            </div>
+        
     </header>
     <div id="app" class="page"></div>
-    <!-- Webpack will automatically inject the js file here -->
+    <!-- Webpack will automatically inject the bundle.js file here -->
 </body>
 
 </html>
